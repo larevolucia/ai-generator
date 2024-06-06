@@ -12,13 +12,16 @@
     />
 
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
       <h1>AI Portuguese Poems</h1>
       <main>
-        <form class="input-group mb-2">
+        <form id="poem-generator-form" class="input-group mb-2 d-flex">
           <input
+            id="search-input"
             class="form-control"
             type="text"
             placeholder="Enter a subject"
@@ -27,7 +30,7 @@
           />
           <input class="btn btn-custom" type="submit" value="Submit" />
         </form>
-        <div id="poem" class="poem">Example text</div>
+        <div id="poem" class="poem"></div>
       </main>
       <footer>
         This project was coded by

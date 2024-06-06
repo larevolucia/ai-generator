@@ -1,10 +1,13 @@
+body {
+  background: #ebedee;
+}
 h1 {
   text-align: center;
   margin: 2em auto;
   color: rgb(167, 83, 245);
 }
 
-main {
+form {
   background-color: rgb(167, 83, 245, 0.2);
   padding: 35px 25px;
   border-radius: 10px;
@@ -12,11 +15,19 @@ main {
 
 .btn-custom {
   background-color: rgb(167, 83, 245);
-  color: aliceblue;
+  color: rgb(246, 241, 249);
+}
+.btn-custom:hover {
+  color: rgb(246, 241, 249);
+  background-color: rgb(151, 46, 249);
 }
 .poem {
+  display: none;
   margin: 20px auto;
   padding: 5px;
+  background-color: rgb(167, 83, 245, 0.2);
+  border-left: thick solid rgb(167, 83, 245);
+  border-radius: 0 10px 10px 0;
 }
 a {
   color: rgb(130, 3, 248);
