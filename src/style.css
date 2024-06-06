@@ -6,6 +6,12 @@ h1 {
   margin: 2em auto;
   color: rgb(167, 83, 245);
 }
+.signature {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(167, 83, 245);
+}
 
 .form-container {
   background-color: rgb(167, 83, 245, 0.2);
