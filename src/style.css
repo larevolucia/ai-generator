@@ -12,6 +12,14 @@ h1 {
   font-weight: bold;
   color: rgb(167, 83, 245);
 }
+.hint-icon {
+  color: rgb(167, 83, 245);
+  font-size: 12px;
+}
+
+.hint {
+  font-size: 10px;
+}
 
 .form-container {
   background-color: rgb(167, 83, 245, 0.2);

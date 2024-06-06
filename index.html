@@ -12,6 +12,10 @@
     />
 
     <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/35a0b8e851.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <script
@@ -40,12 +44,17 @@
                 id="search-input"
                 class="form-control"
                 type="text"
-                placeholder="Enter a subject"
+                placeholder="Enter poem subject"
                 autofocus
                 required
               />
               <input class="btn btn-custom" type="submit" value="Submit" />
             </form>
+          </div>
+          <div class="hint">
+            <i class="fa-solid fa-circle-info mt-1 hint-icon"></i> Subject could
+            be a simple word such as "love", and expression such as "wild life"
+            or a complete instruction such as "funny poem about politics".
           </div>
         </div>
         <div id="poem" class="poem"></div>
