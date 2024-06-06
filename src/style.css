@@ -1,6 +1,28 @@
 h1 {
   text-align: center;
+  margin: 2em auto;
+  color: rgb(167, 83, 245);
+}
+
+main {
+  background-color: rgb(167, 83, 245, 0.2);
+  padding: 35px 25px;
+  border-radius: 10px;
+}
+
+.btn-custom {
+  background-color: rgb(167, 83, 245);
+  color: aliceblue;
+}
+.poem {
+  margin: 20px auto;
+  padding: 5px;
+}
+a {
+  color: rgb(130, 3, 248);
 }
 footer {
+  margin-top: 40px;
   text-align: center;
+  font-size: 12px;
 }
