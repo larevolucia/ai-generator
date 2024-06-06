@@ -14,22 +14,40 @@
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
   </head>
   <body>
     <div class="container">
       <h1>AI Portuguese Poems</h1>
       <main>
-        <form id="poem-generator-form" class="input-group mb-2 d-flex">
-          <input
-            id="search-input"
-            class="form-control"
-            type="text"
-            placeholder="Enter a subject"
-            autofocus
-            required
-          />
-          <input class="btn btn-custom" type="submit" value="Submit" />
-        </form>
+        <div class="row form-container">
+          <div class="col-md-4 p-1">
+            <select class="form-select" name="poem-types" id="poem-types">
+              <option class="dropdown-item" value="Free_Verse" selected>
+                Free Verse
+              </option>
+              <option class="dropdown-item" value="Haiku">Haiku</option>
+              <option class="dropdown-item" value="Sonnet">Sonnet</option>
+              <option class="dropdown-item" value="Limerick">Limerick</option>
+            </select>
+          </div>
+          <div class="col-md-8 p-1">
+            <form id="poem-generator-form" class="input-group">
+              <input
+                id="search-input"
+                class="form-control"
+                type="text"
+                placeholder="Enter a subject"
+                autofocus
+                required
+              />
+              <input class="btn btn-custom" type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
         <div id="poem" class="poem"></div>
       </main>
       <footer>

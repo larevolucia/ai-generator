@@ -7,7 +7,7 @@ h1 {
   color: rgb(167, 83, 245);
 }
 
-form {
+.form-container {
   background-color: rgb(167, 83, 245, 0.2);
   padding: 35px 25px;
   border-radius: 10px;
