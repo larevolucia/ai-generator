@@ -16,22 +16,18 @@ h1 {
   color: rgb(167, 83, 245);
   font-size: 12px;
 }
-
 .hint {
   font-size: 10px;
 }
-
 .form-container {
   background-color: rgb(167, 83, 245, 0.2);
   padding: 35px 25px;
   border-radius: 10px;
 }
-
 p {
   margin: 15px 0 0 0;
   padding: 0;
 }
-
 .btn-custom {
   background-color: rgb(167, 83, 245);
   color: rgb(246, 241, 249);

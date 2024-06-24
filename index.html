@@ -10,7 +10,6 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="src/style.css" />
     <script
       src="https://kit.fontawesome.com/35a0b8e851.js"
@@ -25,46 +24,62 @@
   </head>
   <body>
     <div class="container">
-      <h1>Portuguese Poems Generator</h1>
+      <h1>AI Poems Generator</h1>
       <main>
-        <div class="row form-container">
-          <div class="col-md-4 p-1">
-            <select class="form-select" name="poem-types" id="poem-types">
-              <option class="dropdown-item" value="Free_Verse" selected>
-                Free Verse
-              </option>
-              <option class="dropdown-item" value="Haiku">Haiku</option>
-              <option class="dropdown-item" value="Sonnet">Sonnet</option>
-              <option class="dropdown-item" value="Limerick">Limerick</option>
-            </select>
+        <div class="form-container">
+          <div class="row g-3 align-items-center">
+            <div class="col-md-3 col-12">
+              <select class="form-select" name="poem-types" id="poem-types">
+                <option class="dropdown-item" value="Free_Verse" selected>
+                  Free Verse
+                </option>
+                <option class="dropdown-item" value="Haiku">Haiku</option>
+                <option class="dropdown-item" value="Sonnet">Sonnet</option>
+                <option class="dropdown-item" value="Limerick">Limerick</option>
+              </select>
+            </div>
+            <div class="col-md-3 col-12">
+              <select
+                class="form-select"
+                name="language-select"
+                id="language-select"
+              >
+                <option class="dropdown-item" value="English" selected>
+                  English
+                </option>
+                <option class="dropdown-item" value="Portuguese">
+                  Portuguese
+                </option>
+                <option class="dropdown-item" value="Dutch">Dutch</option>
+              </select>
+            </div>
+            <div class="col-md-6 col-12">
+              <form id="poem-generator-form" class="input-group">
+                <input
+                  id="search-input"
+                  class="form-control"
+                  type="text"
+                  placeholder="Enter poem subject"
+                  autofocus
+                  required
+                />
+                <input class="btn btn-custom" type="submit" value="Submit" />
+              </form>
+            </div>
           </div>
-          <div class="col-md-8 p-1">
-            <form id="poem-generator-form" class="input-group">
-              <input
-                id="search-input"
-                class="form-control"
-                type="text"
-                placeholder="Enter poem subject"
-                autofocus
-                required
-              />
-              <input class="btn btn-custom" type="submit" value="Submit" />
-            </form>
-          </div>
-          <div class="hint">
-            <i class="fa-solid fa-circle-info mt-1 hint-icon"></i> Subject could
-            be a simple word such as "love", and expression such as "wild life"
-            or a complete instruction such as "funny poem about politics".
+          <div class="hint mt-2">
+            <i class="fa-solid fa-circle-info hint-icon"></i> Subject could be a
+            simple word such as "love", and expression such as "wild life" or a
+            complete instruction such as "funny poem about politics".
           </div>
         </div>
         <div id="poem" class="poem"></div>
       </main>
       <footer>
         This project was coded by
-        <a href="https://www.linkedin.com/in/luciareis/"> Lucia Reis</a> and
-        it's
-        <a href="https://github.com/larevolucia/ai-generator" target="_blank">
-          open-sourced on Github</a
+        <a href="https://www.linkedin.com/in/luciareis/">Lucia Reis</a> and it's
+        <a href="https://github.com/larevolucia/ai-generator" target="_blank"
+          >open-sourced on Github</a
         >.
       </footer>
     </div>

@@ -21,17 +21,12 @@ function generatePoem(event) {
 
   let apiKey = "ab8aa73684ae7b075f37aoat0358dd04";
   let poemType = document.querySelector("#poem-types");
+  let language = document.querySelector("#language-select");
   let context = `You are an AI literature expert that enjoys writting poems. Your mission is to create unique poems that will be displayed in basic HTML format. Follow the example: <p>This is the first verse</p>. Pay attention to the user instructions. Sign SheCodes AI inside <p> element with the class="signature" at the bottom of the poem.`;
-  let prompt = `User instructions: Generate a ${poemType.value} about ${
-    document.querySelector("#search-input").value
-  }  in Brazilian Portuguese`;
+  let prompt = `User instructions: Generate a ${poemType.value} poem in the ${
+    language.value
+  } language about the topic: ${document.querySelector("#search-input").value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
-
-  console.log(
-    `Generating ${poemType.value} about ${
-      document.querySelector("#search-input").value
-    }`
-  );
 
   axios.get(apiUrl).then(showPoem);
 }
