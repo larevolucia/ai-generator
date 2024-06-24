@@ -32,8 +32,6 @@ function generatePoem(event) {
 }
 
 function showPoem(response) {
-  console.log(response.data);
-
   new Typewriter("#poem", {
     strings: `${response.data.answer}`,
     autoStart: true,
