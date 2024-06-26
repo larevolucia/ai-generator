@@ -52,3 +52,11 @@ footer {
   text-align: center;
   font-size: 12px;
 }
+@media (max-width: 960px) {
+  h1 {
+    margin: 18px 0;
+  }
+  .form-container {
+    padding: 25px 15px;
+  }
+}
